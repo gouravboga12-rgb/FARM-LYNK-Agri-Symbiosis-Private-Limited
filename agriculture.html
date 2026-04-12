@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Products & Services | Farmlynk Agri Symbiosis Private Limited</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="bg-bg-deep text-text-dark">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="logo-wordmark">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 flex-shrink-0 relative">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <path
+                                d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z"
+                                fill="#00ACC1" fill-opacity="0.2" />
+                            <path
+                                d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z"
+                                fill="#00ACC1" />
+                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="logo-farm">FARM</span> <span class="logo-lynk">LYNK</span>
+                        <span class="logo-agri">Agri Symbiosis Private Limited</span>
+                    </div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="/" class="text-text-dark font-semibold hover:text-primary-green transition">Home</a>
+                <a href="/about.html" class="text-text-dark font-semibold hover:text-primary-green transition">About</a>
+                <a href="/services.html" class="text-primary-green font-semibold">Services</a>
+                <a href="/contact.html"
+                    class="text-text-dark font-semibold hover:text-primary-green transition">Contact</a>
+                <a href="https://wa.me/918074198260" class="btn-primary py-2 px-6">WhatsApp</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="md:hidden text-primary-green focus:outline-none z-[70]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu">
+        <div class="menu-header">
+            <a href="/" class="logo-wordmark">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 flex-shrink-0 relative">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <path d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z" fill="#00ACC1" fill-opacity="0.2"/>
+                            <path d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z" fill="#00ACC1"/>
+                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="logo-farm">FARM</span> <span class="logo-lynk">LYNK</span>
+                        <span class="logo-agri">Agri Symbiosis Private Limited</span>
+                    </div>
+                </div>
+            </a>
+            <button id="menu-close" class="text-primary-green focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="menu-links">
+            <a href="/" class="mobile-link text-primary-green">Home</a>
+            <a href="/about.html" class="mobile-link">About Us</a>
+            <a href="/services.html" class="mobile-link">Services</a>
+            <a href="/contact.html" class="mobile-link">Contact</a>
+            <a href="https://wa.me/918074198260" class="btn-primary mt-4">WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <section class="pt-40 pb-20 bg-gradient-to-b from-primary-green/10 to-bg-deep relative overflow-hidden">
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-green/5 rounded-full blur-[120px] -z-10"></div>
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-text-dark mb-6" data-aos="fade-up">Agriculture Products & Services</h1>
+            <p class="text-xl text-text-light max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Pioneering the next generation of farming with high-performance machinery and sustainable inputs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Land Preparation -->
+                <div class="bg-surface-moss rounded-3xl border border-white/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
+                    data-aos="fade-up">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/A1.png" alt="Land Preparation"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            style="object-position: bottom;">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Land Preparation Machinery</h3>
+                        <p class="text-text-light text-sm mb-4">Advanced tools for primary and secondary tillage, ensuring an optimal seedbed for high-yield farming.</p>
+                        <ul class="text-text-light text-sm space-y-3 mb-8">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Tractor</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Moldboard Plough</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Disc Plough & Cultivator
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Harrow (Disc & Spike
+                                Tooth)</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Rotavator / Rotary Tiller
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Subsoiler & Land Leveler
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Laser Land Leveler</li>
+                        </ul>
+                        <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20enquire%20about%20Land%20Preparation%20Machinery"
+                            class="mt-auto w-full py-3 px-6 bg-primary-green text-white rounded-xl font-bold text-center transition-all hover:bg-primary-green-600">Enquire
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Sowing -->
+                <div class="bg-surface-moss rounded-3xl border border-white/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
+                    data-aos="fade-up" data-aos-delay="50">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/agriculture_sowing_seed_drill.png" alt="Sowing"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Sowing and Planting Machinery</h3>
+                        <p class="text-text-light text-sm mb-4">Precision systems for accurate seed placement and uniform planting to maximize germination rates.</p>
+                        <ul class="text-text-light text-sm space-y-3 mb-8">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Seed Drill & Zero Till
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Seed Cum Fertilizer Drill
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Planter</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Rice Transplanter</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Potato & Sugarcane Planter
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20enquire%20about%20Sowing%20and%20Planting%20Machinery"
+                            class="mt-auto w-full py-3 px-6 bg-primary-green text-white rounded-xl font-bold text-center transition-all hover:bg-primary-green-600">Enquire
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Fertilizer -->
+                <div class="bg-surface-moss rounded-3xl border border-white/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/A3.png" alt="Fertilizer"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            style="object-position: center;">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Fertilizer and Manure Application</h3>
+                        <p class="text-text-light text-sm mb-4">Efficient broadcasting solutions that ensure even nutrient distribution while reducing waste.</p>
+                        <ul class="text-text-light text-sm space-y-3 mb-8">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Fertilizer Broadcaster
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Manure Spreader</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Slurry Tanker</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Compost Spreader</li>
+                        </ul>
+                        <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20enquire%20about%20Fertilizer%20and%20Manure%20Application"
+                            class="mt-auto w-full py-3 px-6 bg-primary-green text-white rounded-xl font-bold text-center transition-all hover:bg-primary-green-600">Enquire
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Irrigation -->
+                <div class="bg-surface-moss rounded-3xl border border-white/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
+                    data-aos="fade-up" data-aos-delay="150">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/A4.png" alt="Irrigation"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            style="object-position: left center;">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Irrigation Equipment</h3>
+                        <p class="text-text-light text-sm mb-4">Smart water management systems that optimize crop hydration while conserving vital water resources.</p>
+                        <ul class="text-text-light text-sm space-y-3 mb-8">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Water Pump</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Sprinkler Irrigation
+                                System</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Drip & Center Pivot
+                                Systems</li>
+                        </ul>
+                        <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20enquire%20about%20Irrigation%20Equipment"
+                            class="mt-auto w-full py-3 px-6 bg-primary-green text-white rounded-xl font-bold text-center transition-all hover:bg-primary-green-600">Enquire
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Crop Protection -->
+                <div class="bg-surface-moss rounded-3xl border border-white/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/A5.png" alt="Crop Protection"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Crop Protection Machinery</h3>
+                        <p class="text-text-light text-sm mb-4">High-coverage spraying technology that protects crops from pests with minimal chemical usage.</p>
+                        <ul class="text-text-light text-sm space-y-3 mb-8">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Knapsack & Power Sprayer
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Boom Sprayer & Mist Blower
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Sticky & Light Traps</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Drone Sprayer & Duster
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20enquire%20about%20Crop%20Protection%20Machinery"
+                            class="mt-auto w-full py-3 px-6 bg-primary-green text-white rounded-xl font-bold text-center transition-all hover:bg-primary-green-600">Enquire
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Harvesting -->
+                <div class="bg-surface-moss rounded-3xl border border-white/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
+                    data-aos="fade-up" data-aos-delay="250">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/agriculture_machinery_1775979261196.png" alt="Harvesting"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Harvesting Machinery</h3>
+                        <p class="text-text-light text-sm mb-4">High-performance harvesting solutions that minimize crop loss and reduce labor requirements.</p>
+                        <ul class="text-text-light text-sm space-y-3 mb-8">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Sickle, Reaper & Reaper
+                                Binder</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Combine & Forage Harvester
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Sugarcane Harvester</li>
+                        </ul>
+                        <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20enquire%20about%20Harvesting%20Machinery"
+                            class="mt-auto w-full py-3 px-6 bg-primary-green text-white rounded-xl font-bold text-center transition-all hover:bg-primary-green-600">Enquire
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Post-Harvest (NEW) -->
+                <div class="bg-surface-moss rounded-3xl border border-white/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl md:col-span-2 lg:col-span-1"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/A7.png" alt="Post-Harvest"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            style="object-position: right top;">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Post Harvest and Processing</h3>
+                        <p class="text-text-light text-sm mb-4">Comprehensive grain handling tools that maintain quality and increase market value after harvest.</p>
+                        <ul class="text-text-light text-sm space-y-3 mb-8">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Threshers & Winnowers</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Grain Dryer & Rice Mill
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-primary-green rounded-full"></span> Flour Mill & Oil Expeller
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20enquire%20about%20Post%20Harvest%20and%20Processing"
+                            class="mt-auto w-full py-3 px-6 bg-primary-green text-white rounded-xl font-bold text-center transition-all hover:bg-primary-green-600">Enquire
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio-Inputs Section -->
+    <section class="py-24 bg-bg-deep relative overflow-hidden">
+        <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-aqua-blue/5 rounded-full blur-[120px] -z-10"></div>
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-16">Sustainable Bio-Inputs</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-surface-moss p-12 rounded-3xl shadow-xl flex flex-wrap lg:flex-nowrap gap-8 border border-white/5"
+                    data-aos="fade-right">
+                    <div class="w-full lg:w-1/3">
+                        <img src="/modern_agriculture_1775979152369.png" alt="Nutrients"
+                            class="w-full h-48 object-cover rounded-2xl">
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="text-2xl font-bold mb-4 text-primary-green">Crop Nutrients</h4>
+                        <p class="text-text-light mb-6">Organic fertilizers, composts, and bio-stimulants that
+                            rejuvenate soil and enhance plant growth.</p>
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Crop%20Nutrients"
+                            class="text-primary-green font-bold flex items-center gap-2 hover:gap-4 transition-all">Enquire
+                            Now &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-surface-moss p-12 rounded-3xl shadow-xl flex flex-wrap lg:flex-nowrap gap-8 border border-white/5"
+                    data-aos="fade-left">
+                    <div class="w-full lg:w-1/3">
+                        <img src="/agriculture_machinery_1775979261196.png" alt="Seeds"
+                            class="w-full h-48 object-cover rounded-2xl">
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="text-2xl font-bold mb-4 text-primary-green">Seed Treatments</h4>
+                        <p class="text-text-light mb-6">Bio-based coatings that ensure high germination rates and
+                            early-stage resistance.</p>
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Seed%20Treatments"
+                            class="text-primary-green font-bold flex items-center gap-2 hover:gap-4 transition-all">Enquire
+                            Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/20 text-white pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-2">
+                <div class="logo-wordmark mb-6">
+                    <span class="logo-farm">FARM</span> <span class="logo-lynk">LYNK</span>
+                    <span class="logo-agri">Agri Symbiosis Private Limited</span>
+                </div>
+                <p class="text-gray-400 max-w-sm mb-8 leading-relaxed">
+                    Pioneering the synergy between agriculture and aquaculture to ensure a sustainable future for rural entrepreneurs.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/farmlynk_official?igsh=MWE1b2t1OWs3YnJjcg==" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary-green transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/farmlynk" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-aqua-blue transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://youtube.com/@farmlynk?si=30cw0SO09E5NiVuJ" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 10 10 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 10 10 0 0 1-15 0 2 2 0 0 1-2-2z"/><path d="m10 15 5-3-5-3z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="/" class="hover:text-primary-green transition">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-primary-green transition">About Us</a></li>
+                    <li><a href="/services.html" class="hover:text-primary-green transition">Our Services</a></li>
+                    <li><a href="/contact.html" class="hover:text-primary-green transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6">Contact Info</h4>
+                <div class="space-y-6 text-gray-400">
+                    <div class="flex items-start gap-4 group text-left">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-primary-green/20 transition duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-green"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <p class="text-sm leading-relaxed">
+                            Alwal, Secunderabad,<br>Telangana - 500010
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-4 group text-left">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-accent-orange/20 transition duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-orange"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="text-sm">
+                            <a href="tel:8074198260" class="block hover:text-white transition font-medium">8074198260</a>
+                            <a href="tel:8106031246" class="block hover:text-white transition font-medium">8106031246</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 group text-left">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-aqua-blue/20 transition duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-aqua-blue"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <a href="mailto:farmlynk@gmail.com" class="text-sm hover:text-white transition break-all">farmlynk@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-10 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Farmlynk Agri Symbiosis Private Limited. All rights reserved. GST: 36AAGCF5017P1ZA</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20services" class="whatsapp-float">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="white" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.7 27.2 106.2 27.2h.1c122.3 0 222-99.6 222-222 0-59.3-23-115.1-65.1-157.1zM223.9 446.3c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-69.8 18.3L72 366.4l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 54 81.2 54 130.5 0 101.7-82.8 184.5-184.5 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.4 2.5-2.5 5.5-6.5 8.3-9.8 2.8-3.2 3.7-5.5 5.5-9.2 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile Menu Toggle Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        function toggleMenu() {
+            const isActive = mobileMenu.classList.toggle('active');
+            if (isActive) {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            } else {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+
+        // Close menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    </script>
+</body>
+</html>

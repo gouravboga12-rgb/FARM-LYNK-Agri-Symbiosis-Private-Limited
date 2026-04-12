@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+@theme {
+  /* Eco-Digital Forest Palette */
+  --color-primary-green: #2ECC71; /* Radiant Mint */
+  --color-aqua-blue: #00D2FF;    /* Hydro Glow */
+  --color-accent-orange: #FF8F00;
+  --color-bg-deep: #0A1F1C;      /* Forest Night */
+  --color-surface-moss: #142B28;  /* Muted Moss */
+  --color-text-dark: #F4F7F6;     /* Parchment White */
+  --color-text-light: #A0B1AF;    /* Muted Sage */
+  
+  --font-sans: 'Inter', 'Roboto', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+@layer base {
+  html, body {
+    @apply overflow-x-hidden;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans antialiased text-text-dark bg-bg-deep;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-primary-green text-bg-deep rounded-full font-bold transition-all duration-300 hover:bg-primary-green/90 hover:shadow-[0_0_20px_rgba(46,204,113,0.3)] hover:scale-105 active:scale-95;
+  }
+  .btn-aqua {
+    @apply px-8 py-3 bg-aqua-blue text-bg-deep rounded-full font-bold transition-all duration-300 hover:bg-aqua-blue/90 hover:shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:scale-105 active:scale-95;
+  }
+  .btn-orange {
+    @apply px-8 py-3 bg-accent-orange text-white rounded-full font-bold transition-all duration-300 hover:bg-accent-orange/90 hover:scale-105 shadow-lg active:scale-95;
+  }
+  
+  .glass {
+    @apply bg-bg-deep/80 backdrop-blur-md border border-white/10 shadow-2xl;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:border-primary-green/30;
+  }
+
+  .video-card {
+    @apply bg-surface-moss/40 backdrop-blur-md rounded-3xl border border-white/5 overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(46,204,113,0.15)] hover:border-primary-green/20;
+  }
+}
+
+/* Custom Wordmark Logo Styles */
+.logo-wordmark {
+  @apply flex items-center gap-1 font-bold whitespace-nowrap text-[10px] sm:text-sm md:text-lg lg:text-xl transition-all duration-300;
+}
+
+.logo-farm { @apply text-primary-green font-bold; }
+.logo-lynk { @apply text-aqua-blue font-bold ml-0.5; }
+.logo-agri { @apply inline-block text-white font-bold ml-1 opacity-90; }
+
+.logo-icon {
+  @apply text-primary-green relative;
+}
+
+/* Audience Grid & Impact Cards */
+.audience-card {
+  @apply bg-surface-moss p-6 rounded-2xl border border-white/5 shadow-lg transition-all duration-300 hover:shadow-primary-green/5 hover:-translate-y-1 hover:border-white/10;
+}
+
+.impact-blob {
+  @apply absolute -z-10 blur-3xl rounded-full opacity-10 transition-all duration-700;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: pulse-wa 3s infinite;
+  box-shadow: 0 10px 25px rgba(18, 140, 126, 0.4), inset 0 2px 2px rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.whatsapp-float svg {
+  width: 38px;
+  height: 38px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 15px 30px rgba(18, 140, 126, 0.6), inset 0 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+.whatsapp-float:active {
+  transform: scale(0.95);
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: calc(100% + 15px);
+  top: 50%;
+  transform: translateY(-50%) scale(0.9);
+  background: rgba(20, 43, 40, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+@keyframes pulse-wa {
+  0% { box-shadow: 0 10px 25px rgba(18, 140, 126, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  70% { box-shadow: 0 10px 25px rgba(18, 140, 126, 0.4), 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 10px 25px rgba(18, 140, 126, 0.4), 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Mobile WhatsApp adjustments */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 56px;
+    height: 56px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+  .whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+  }
+  .whatsapp-tooltip {
+    display: none;
+  }
+}
+
+
+/* Animations */
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+
+/* Mobile Menu Drawer */
+#mobile-menu {
+  @apply fixed inset-0 z-[60] bg-bg-deep/98 backdrop-blur-xl translate-x-full transition-transform duration-500 flex flex-col overflow-y-auto;
+}
+
+.menu-header {
+  @apply flex justify-between items-center p-6 border-b border-white/5 w-full;
+}
+
+.menu-links {
+  @apply flex flex-col items-center justify-center flex-grow gap-8 py-12 text-2xl font-bold;
+}
+
+#mobile-menu.active {
+  @apply translate-x-0;
+}
+
+.mobile-link {
+  @apply text-text-dark hover:text-primary-green transition-colors;
+}
+
+/* Responsive Container & Padding Override */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  /* Reduced section padding for mobile */
+  section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  /* Specific hero padding adjustment */
+  .pt-40 {
+    padding-top: 6rem !important;
+  }
+
+  /* Card padding reduction */
+  .p-10, .p-12, .p-20 {
+    padding: 1.5rem !important;
+  }
+  
+  /* Image height adjustments for mobile cards */
+  .h-80 {
+    height: 14rem !important;
+  }
+  
+  /* Hero Text Scaling */
+  h1 {
+    @apply text-3xl;
+    line-height: 1.2 !important;
+  }
+}

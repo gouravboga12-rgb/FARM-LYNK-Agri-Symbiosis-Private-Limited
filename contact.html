@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Farmlynk Agri Symbiosis Private Limited</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-bg-deep text-text-dark">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="logo-wordmark">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 flex-shrink-0 relative">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <path d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z" fill="#00ACC1" fill-opacity="0.2"/>
+                            <path d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z" fill="#00ACC1"/>
+                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="logo-farm">FARM</span> <span class="logo-lynk">LYNK</span>
+                        <span class="logo-agri">Agri Symbiosis Private Limited</span>
+                    </div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="/" class="text-text-dark font-semibold hover:text-primary-green transition">Home</a>
+                <a href="/about.html" class="text-text-dark font-semibold hover:text-primary-green transition">About</a>
+                <a href="/services.html" class="text-text-dark font-semibold hover:text-primary-green transition">Services</a>
+                <a href="/contact.html" class="text-primary-green font-semibold">Contact</a>
+                <a href="https://wa.me/918074198260" class="btn-primary py-2 px-6">WhatsApp</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="md:hidden text-primary-green focus:outline-none z-[70]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu">
+        <div class="menu-header">
+            <a href="/" class="logo-wordmark">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 flex-shrink-0 relative">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <path d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z" fill="#00ACC1" fill-opacity="0.2"/>
+                            <path d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z" fill="#00ACC1"/>
+                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="logo-farm">FARM</span> <span class="logo-lynk">LYNK</span>
+                        <span class="logo-agri">Agri Symbiosis Private Limited</span>
+                    </div>
+                </div>
+            </a>
+            <button id="menu-close" class="text-primary-green focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="menu-links">
+            <a href="/" class="mobile-link text-primary-green">Home</a>
+            <a href="/about.html" class="mobile-link">About Us</a>
+            <a href="/services.html" class="mobile-link">Services</a>
+            <a href="/contact.html" class="mobile-link">Contact</a>
+            <a href="https://wa.me/918074198260" class="btn-primary mt-4">WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <section class="pt-40 pb-20 bg-gradient-to-b from-primary-green/10 to-bg-deep relative overflow-hidden">
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-green/5 rounded-full blur-[120px] -z-10"></div>
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-text-dark mb-6" data-aos="fade-up">Get In Touch</h1>
+            <p class="text-xl text-text-light max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Have questions about our machinery or aquaculture services? We're here to help.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="bg-surface-moss p-10 rounded-3xl shadow-2xl border border-white/5" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-8 text-text-dark">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-bg-deep/50 border border-white/10 text-text-dark focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+91 8074198260" class="w-full px-4 py-3 rounded-xl bg-bg-deep/50 border border-white/10 text-text-dark focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-bg-deep/50 border border-white/10 text-text-dark focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Service Interested In</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-bg-deep/50 border border-white/10 text-text-dark focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition">
+                                <option>Agriculture Machinery</option>
+                                <option>Bio Inputs</option>
+                                <option>Aquaculture Services</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" placeholder="How can we help you?" class="w-full px-4 py-3 rounded-xl bg-bg-deep/50 border border-white/10 text-text-dark focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary py-4 text-lg">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Details -->
+                <div data-aos="fade-left">
+                    <div class="space-y-12">
+                        <!-- Direct Contact -->
+                        <div class="flex gap-6">
+                            <div class="w-14 h-14 bg-primary-green text-white rounded-2xl flex items-center justify-center shrink-0 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-3">Call or WhatsApp</h4>
+                                <div class="space-y-2">
+                                    <a href="tel:8074198260" class="block text-text-light hover:text-primary-green text-lg font-semibold transition">+91 80741 98260</a>
+                                    <a href="tel:8106031246" class="block text-text-light hover:text-primary-green text-lg font-semibold transition">+91 81060 31246</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex gap-6">
+                            <div class="w-14 h-14 bg-aqua-blue text-white rounded-2xl flex items-center justify-center shrink-0 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-3">Email Us</h4>
+                                <a href="mailto:farmlynkagrisymbiosis@gmail.com" class="text-text-light hover:text-aqua-blue text-lg font-semibold transition">farmlynkagrisymbiosis@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="flex gap-6">
+                            <div class="w-14 h-14 bg-accent-orange text-white rounded-2xl flex items-center justify-center shrink-0 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-3">Visit Our Office</h4>
+                                <p class="text-text-light leading-relaxed max-w-sm">
+                                    3rd Floor, Flat 302, BJ Nirvana Apartments, Panchasheela Enclave, Alwal, Secunderabad, Telangana - 500010
+                                </p>
+                                <p class="mt-4 text-xs font-bold text-gray-400 uppercase tracking-widest">GST: 36AAGCF5017P1ZA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-24 bg-bg-deep overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="rounded-3xl overflow-hidden shadow-2xl h-[450px] relative">
+                <!-- Google Map Placeholder Embed -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15220.57342676766!2d78.49072!3d17.50285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a40590a599b%3A0x6a0ed78d388f8d6!2sAlwal%2C%20Secunderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1712910000000!5m2!1sen!2sin" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/20 text-white pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-2">
+                <div class="logo-wordmark mb-6">
+                    <span class="logo-farm">FARM</span> <span class="logo-lynk">LYNK</span>
+                    <span class="logo-agri">Agri Symbiosis Private Limited</span>
+                </div>
+                <p class="text-gray-400 max-w-sm mb-8 leading-relaxed">
+                    Pioneering the synergy between agriculture and aquaculture to ensure a sustainable future for rural entrepreneurs.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/farmlynk_official?igsh=MWE1b2t1OWs3YnJjcg==" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary-green transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/farmlynk" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-aqua-blue transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://youtube.com/@farmlynk?si=30cw0SO09E5NiVuJ" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 10 10 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 10 10 0 0 1-15 0 2 2 0 0 1-2-2z"/><path d="m10 15 5-3-5-3z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="/" class="hover:text-primary-green transition">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-primary-green transition">About Us</a></li>
+                    <li><a href="/services.html" class="hover:text-primary-green transition">Our Services</a></li>
+                    <li><a href="/contact.html" class="hover:text-primary-green transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6">Contact Info</h4>
+                <div class="space-y-6 text-gray-400">
+                    <div class="flex items-start gap-4 group text-left">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-primary-green/20 transition duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-green"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <p class="text-sm leading-relaxed">
+                            Alwal, Secunderabad,<br>Telangana - 500010
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-4 group text-left">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-accent-orange/20 transition duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-orange"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="text-sm">
+                            <a href="tel:8074198260" class="block hover:text-white transition font-medium">8074198260</a>
+                            <a href="tel:8106031246" class="block hover:text-white transition font-medium">8106031246</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 group text-left">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-aqua-blue/20 transition duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-aqua-blue"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <a href="mailto:farmlynk@gmail.com" class="text-sm hover:text-white transition break-all">farmlynk@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-10 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Farmlynk Agri Symbiosis Private Limited. All rights reserved. GST: 36AAGCF5017P1ZA</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918074198260?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20services" class="whatsapp-float">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="white" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.7 27.2 106.2 27.2h.1c122.3 0 222-99.6 222-222 0-59.3-23-115.1-65.1-157.1zM223.9 446.3c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-69.8 18.3L72 366.4l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 54 81.2 54 130.5 0 101.7-82.8 184.5-184.5 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.4 2.5-2.5 5.5-6.5 8.3-9.8 2.8-3.2 3.7-5.5 5.5-9.2 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile Menu Toggle Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        function toggleMenu() {
+            const isActive = mobileMenu.classList.toggle('active');
+            if (isActive) {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            } else {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+
+        // Close menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "farmlynk-agrisymbiosis-pvt-ltd",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.9",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "lucide-static": "^1.8.0"
+  }
+}
