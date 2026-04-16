@@ -15,6 +15,7 @@ export default defineConfig({
         agriculture: resolve(__dirname, 'agriculture.html'),
         aquaculture: resolve(__dirname, 'aquaculture.html'),
         contact: resolve(__dirname, 'contact.html'),
+        gallery: resolve(__dirname, 'gallery.html'),
       },
     },
   },
