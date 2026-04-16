@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  /* Eco-Digital Forest Palette */
-  --color-primary-green: #2ECC71; /* Radiant Mint */
-  --color-aqua-blue: #00D2FF;    /* Hydro Glow */
-  --color-accent-orange: #FF8F00;
-  --color-bg-deep: #0A1F1C;      /* Forest Night */
-  --color-surface-moss: #142B28;  /* Muted Moss */
-  --color-text-dark: #F4F7F6;     /* Parchment White */
-  --color-text-light: #A0B1AF;    /* Muted Sage */
+  /* Modern Harvest Palette (Light Theme) */
+  --color-primary-green: #16A34A; /* Forest Emerald */
+  --color-aqua-blue: #0891B2;    /* Deep Cyan */
+  --color-accent-orange: #EA580C; /* Burnt Orange */
+  --color-bg-deep: #F8FAFC;      /* Ghost White */
+  --color-surface-moss: #F1F5F9;  /* Ice Blue */
+  --color-text-dark: #1E293B;     /* Charcoal */
+  --color-text-light: #475569;    /* Muted Slate */
   
   --font-sans: 'Inter', 'Roboto', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
@@ -25,36 +25,53 @@
 
 @layer components {
   .btn-primary {
-    @apply px-8 py-3 bg-primary-green text-bg-deep rounded-full font-bold transition-all duration-300 hover:bg-primary-green/90 hover:shadow-[0_0_20px_rgba(46,204,113,0.3)] hover:scale-105 active:scale-95;
+    @apply px-8 py-3 bg-primary-green text-white rounded-full font-bold transition-all duration-300 hover:bg-primary-green/90 hover:shadow-[0_0_20px_rgba(22,163,74,0.3)] hover:scale-105 active:scale-95;
   }
   .btn-aqua {
-    @apply px-8 py-3 bg-aqua-blue text-bg-deep rounded-full font-bold transition-all duration-300 hover:bg-aqua-blue/90 hover:shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:scale-105 active:scale-95;
+    @apply px-8 py-3 bg-aqua-blue text-white rounded-full font-bold transition-all duration-300 hover:bg-aqua-blue/90 hover:shadow-[0_0_20px_rgba(8,145,178,0.3)] hover:scale-105 active:scale-95;
   }
   .btn-orange {
     @apply px-8 py-3 bg-accent-orange text-white rounded-full font-bold transition-all duration-300 hover:bg-accent-orange/90 hover:scale-105 shadow-lg active:scale-95;
   }
+  .btn-primary-white {
+    @apply px-8 py-3 bg-white text-primary-green rounded-full font-bold transition-all duration-300 hover:bg-white/95 hover:shadow-[0_10px_30px_rgba(255,255,255,0.4)] hover:scale-105 active:scale-95;
+  }
   
   .glass {
-    @apply bg-bg-deep/80 backdrop-blur-md border border-white/10 shadow-2xl;
+    @apply bg-white/80 backdrop-blur-md border border-black/5 shadow-xl;
   }
   
   .card-hover {
-    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:border-primary-green/30;
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:border-primary-green/20;
   }
 
   .video-card {
-    @apply bg-surface-moss/40 backdrop-blur-md rounded-3xl border border-white/5 overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(46,204,113,0.15)] hover:border-primary-green/20;
+    @apply bg-white rounded-3xl border border-black/5 overflow-hidden transition-all duration-500 shadow-xl hover:shadow-2xl hover:border-primary-green/10;
+  }
+
+  .gallery-item {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .gallery-item.hidden {
+    display: none !important;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  .filter-btn.active {
+    background: var(--color-primary-green);
+    color: white;
+    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
   }
 }
 
 /* Custom Wordmark Logo Styles */
 .logo-wordmark {
-  @apply flex items-center gap-1 font-bold whitespace-nowrap text-[10px] sm:text-sm md:text-lg lg:text-xl transition-all duration-300;
+  @apply flex items-center gap-1 font-bold whitespace-nowrap text-[10px] sm:text-sm md:text-lg lg:text-xl transition-all duration-300 text-text-dark;
 }
 
 .logo-farm { @apply text-primary-green font-bold; }
 .logo-lynk { @apply text-aqua-blue font-bold ml-0.5; }
-.logo-agri { @apply inline-block text-white font-bold ml-1 opacity-90; }
+.logo-agri { @apply inline-block font-bold ml-1 opacity-90; }
 
 .logo-icon {
   @apply text-primary-green relative;
@@ -171,7 +188,7 @@
 }
 
 .menu-links {
-  @apply flex flex-col items-center justify-center flex-grow gap-8 py-12 text-2xl font-bold;
+  @apply flex flex-col items-center justify-center flex-grow gap-6 py-6 text-xl font-bold;
 }
 
 #mobile-menu.active {
