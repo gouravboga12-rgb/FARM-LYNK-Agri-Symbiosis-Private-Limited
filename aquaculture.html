@@ -16,25 +16,12 @@
     <nav class="fixed top-0 w-full z-50 glass py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="/" class="logo-wordmark">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 flex-shrink-0 relative">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                            <path
-                                d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z"
-                                fill="#00ACC1" fill-opacity="0.2" />
-                            <path
-                                d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z"
-                                fill="#00ACC1" />
-                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2"
-                                stroke-linecap="round" />
-                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
+                <img src="/logo.png" alt="Farmlynk Logo" class="logo-img">
+                <div class="logo-text-container">
+                    <div class="logo-name">
+                        <span class="text-primary-green">FARM</span><span class="text-aqua-blue">LYNK</span>
                     </div>
-                    <div class="flex items-center">
-                        <span class="logo-farm text-primary-green">FARM</span> <span class="logo-lynk text-aqua-blue">LYNK</span>
-                        <span class="logo-agri text-text-dark opacity-90">Agri Symbiosis Private Limited</span>
-                    </div>
+                    <span class="logo-suffix text-text-dark">Agri Symbiosis</span>
                 </div>
             </a>
             <div class="hidden md:flex items-center gap-8">
@@ -59,19 +46,12 @@
     <div id="mobile-menu">
         <div class="menu-header">
             <a href="/" class="logo-wordmark">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 flex-shrink-0 relative">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                            <path d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z" fill="#00ACC1" fill-opacity="0.2"/>
-                            <path d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z" fill="#00ACC1"/>
-                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                <img src="/logo.png" alt="Farmlynk Logo" class="logo-img">
+                <div class="logo-text-container">
+                    <div class="logo-name">
+                        <span class="text-primary-green">FARM</span><span class="text-aqua-blue">LYNK</span>
                     </div>
-                    <div class="flex items-center">
-                        <span class="logo-farm text-primary-green">FARM</span> <span class="logo-lynk text-aqua-blue">LYNK</span>
-                        <span class="logo-agri text-text-dark opacity-90">Agri Symbiosis Private Limited</span>
-                    </div>
+                    <span class="logo-suffix text-text-dark">Agri Symbiosis</span>
                 </div>
             </a>
             <button id="menu-close" class="text-primary-green focus:outline-none">
@@ -104,18 +84,29 @@
     <!-- Services Grid -->
     <section class="py-24">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-start">
                 <!-- Value Addition -->
                 <div class="bg-white rounded-3xl border border-black/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
                     data-aos="fade-up">
                     <div class="h-64 overflow-hidden">
-                        <img src="/indian_aqua_value_addition.png" alt="Value Addition"
+                        <img src="/aqua_value_addition_new.png" alt="Value Addition"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
                     <div class="p-8 flex-grow flex flex-col text-center">
-                        <h4 class="text-2xl font-bold mb-4">Value Addition</h4>
-                        <p class="text-text-light mb-8">Transforming raw catch into premium seafood products through meticulous cold-chain management and advanced processing techniques.</p>
-                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Value%20Addition%20Services"
+                        <h4 class="text-2xl font-bold mb-4">VALUE ADDITION</h4>
+                        <p class="text-text-light text-sm mb-4 line-clamp-2">We turn fresh aquaculture produce into safe, ready-to-use products through simple and hygienic processing methods.</p>
+                        
+                        <div class="expandable-content">
+                            <p class="text-text-light text-sm">This improves quality and consistency while extending shelf life and reducing waste. As a result, the products gain higher market value and reach a wider range of customers.</p>
+                        </div>
+
+                        <button class="view-more-btn text-aqua-blue font-bold text-sm mb-6 flex justify-center items-center gap-1 mx-auto">
+                            <span class="btn-text">View More</span>
+                            <span class="plus-icon">+</span>
+                            <span class="minus-icon">-</span>
+                        </button>
+
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20VALUE%20ADDITION"
                             class="mt-auto w-full py-3 px-6 bg-aqua-blue text-white rounded-xl font-bold transition-all hover:bg-aqua-blue-600">Enquire
                             Now</a>
                     </div>
@@ -125,13 +116,24 @@
                 <div class="bg-white rounded-3xl border border-black/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
                     data-aos="fade-up" data-aos-delay="100">
                     <div class="h-64 overflow-hidden">
-                        <img src="/indian_aqua_community.png" alt="Community Integration"
+                        <img src="/aqua_community_new.png" alt="Community Integration"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
                     <div class="p-8 flex-grow flex flex-col text-center">
-                        <h4 class="text-2xl font-bold mb-4">Community Integration</h4>
-                        <p class="text-text-light mb-8">Empowering local communities by integrating them into the sustainable aquaculture value chain through collaborative production and market access.</p>
-                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Community%20Integration"
+                        <h4 class="text-2xl font-bold mb-4">COMMUNITY INTEGRATION</h4>
+                        <p class="text-text-light text-sm mb-4 line-clamp-2">We engage coastal women clusters in aquaculture value addition, creating sustained livelihood opportunities.</p>
+                        
+                        <div class="expandable-content">
+                            <p class="text-text-light text-sm">Through structured activities, participants are able to generate supplementary income even during off-season periods. Regular awareness programs and skill-based training are conducted to enhance capacity and market exposure. This approach fosters inclusive development while strengthening community resilience.</p>
+                        </div>
+
+                        <button class="view-more-btn text-aqua-blue font-bold text-sm mb-6 flex justify-center items-center gap-1 mx-auto">
+                            <span class="btn-text">View More</span>
+                            <span class="plus-icon">+</span>
+                            <span class="minus-icon">-</span>
+                        </button>
+
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20COMMUNITY%20INTEGRATION"
                             class="mt-auto w-full py-3 px-6 bg-aqua-blue text-white rounded-xl font-bold transition-all hover:bg-aqua-blue-600">Enquire
                             Now</a>
                     </div>
@@ -141,13 +143,24 @@
                 <div class="bg-white rounded-3xl border border-black/5 shadow-sm overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-2xl"
                     data-aos="fade-up" data-aos-delay="200">
                     <div class="h-64 overflow-hidden">
-                        <img src="/indian_live_fish_trading.png" alt="Live Fish Trading"
+                        <img src="/aqua_live_trading_new.png" alt="Live Fish Trading"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
                     <div class="p-8 flex-grow flex flex-col text-center">
-                        <h4 class="text-2xl font-bold mb-4">Live Fish Trading</h4>
-                        <p class="text-text-light mb-8">Utilizing innovative oxygenated transport technology and real-time logistics to deliver fresh seafood with zero mortality.</p>
-                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Live%20Fish%20Trading"
+                        <h4 class="text-2xl font-bold mb-4">LIVE FISH TRADING</h4>
+                        <p class="text-text-light text-sm mb-4 line-clamp-2">We enable seamless live fish trading by connecting aquaculture farmers directly with reliable markets.</p>
+                        
+                        <div class="expandable-content">
+                            <p class="text-text-light text-sm">Our approach ensures better price realization, faster transactions, and reduced losses. Creating more efficient, transparent, and accessible market system for producers.</p>
+                        </div>
+
+                        <button class="view-more-btn text-aqua-blue font-bold text-sm mb-6 flex justify-center items-center gap-1 mx-auto">
+                            <span class="btn-text">View More</span>
+                            <span class="plus-icon">+</span>
+                            <span class="minus-icon">-</span>
+                        </button>
+
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20LIVE%20FISH%20TRADING"
                             class="mt-auto w-full py-3 px-6 bg-aqua-blue text-white rounded-xl font-bold transition-all hover:bg-aqua-blue-600">Enquire
                             Now</a>
                     </div>
@@ -160,17 +173,17 @@
     <section class="py-24 bg-bg-deep relative overflow-hidden">
         <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-green/5 rounded-full blur-[120px] -z-10"></div>
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-black text-center mb-16">Aquaculture Inputs & Tech</h2>
+            <h2 class="text-4xl font-black text-center mb-16">INPUTS AND TECH</h2>
             <div class="grid md:grid-cols-2 gap-12 text-left">
                 <div class="bg-white p-10 rounded-3xl shadow-lg border border-black/5 border-l-8 border-aqua-blue flex items-center gap-8"
                     data-aos="fade-right">
                     <div class="flex-grow">
                         <h5 class="text-xl font-bold mb-2">Probiotics & Feed</h5>
-                        <p class="text-text-light mb-4">Boosting aquatic ecosystem health with scientifically formulated bio-inputs that improve immunity and growth.</p>
-                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Probiotics%20%26%20Feed" class="text-aqua-blue font-bold">Enquire Now &rarr;</a>
+                        <p class="text-text-light text-xs mb-4">Boosting aquatic ecosystem health with scientifically formulated bio-inputs that improve immunity and growth.</p>
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Probiotics%20%26%20Feed" class="text-aqua-blue font-bold text-xs block">Enquire Now &rarr;</a>
                     </div>
                     <div class="w-24 h-24 flex-shrink-0">
-                        <img src="/modern_aquaculture_1775979168379.png" alt="Tech"
+                        <img src="/aqua_probiotics.png" alt="Indian Aqua Probiotics"
                             class="w-full h-full object-cover rounded-xl">
                     </div>
                 </div>
@@ -178,11 +191,11 @@
                     data-aos="fade-left">
                     <div class="flex-grow">
                         <h5 class="text-xl font-bold mb-2">Aeration Systems</h5>
-                        <p class="text-text-light mb-4">Optimizing pond productivity with high-efficiency dissolved oxygen solutions designed for intensive cultivation.</p>
-                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Aeration%20Systems" class="text-aqua-blue font-bold">Enquire Now &rarr;</a>
+                        <p class="text-text-light text-xs mb-4">Optimizing pond productivity with high-efficiency dissolved oxygen solutions designed for intensive cultivation.</p>
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Aeration%20Systems" class="text-aqua-blue font-bold text-xs block">Enquire Now &rarr;</a>
                     </div>
                     <div class="w-24 h-24 flex-shrink-0">
-                        <img src="/aquaculture_service_1775979285864.png" alt="Aeration"
+                        <img src="/aqua_aeration.png" alt="Indian Aeration Systems"
                             class="w-full h-full object-cover rounded-xl">
                     </div>
                 </div>
@@ -191,16 +204,16 @@
                     data-aos="fade-up" data-aos-delay="100">
                     <div class="flex-grow">
                         <h5 class="text-xl font-bold mb-2">Infrastructure & Care</h5>
-                        <p class="text-text-light mb-4 text-xs">Pond liners, aerators, and specialized cleaners to ensure a healthy aquatic environment for optimal growth.</p>
+                        <p class="text-text-light text-xs mb-4">Pond liners, aerators, and specialized cleaners to ensure a healthy aquatic environment for optimal growth.</p>
                         <ul class="text-[10px] text-text-light flex flex-wrap gap-2 mb-4">
                             <li class="bg-aqua-blue/5 px-2 py-0.5 rounded-md">Pond liners</li>
                             <li class="bg-aqua-blue/5 px-2 py-0.5 rounded-md">Aerators</li>
                             <li class="bg-aqua-blue/5 px-2 py-0.5 rounded-md">Pond cleaners</li>
                         </ul>
-                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Pond%20Infrastructure" class="text-aqua-blue font-bold">Enquire Now &rarr;</a>
+                        <a href="https://wa.me/918074198260?text=Hello%2c%20I%20want%20to%20enquire%20about%20Pond%20Infrastructure" class="text-aqua-blue font-bold text-xs block">Enquire Now &rarr;</a>
                     </div>
                     <div class="w-24 h-24 flex-shrink-0">
-                        <img src="/indian_pond_infrastructure.png" alt="Infrastructure"
+                        <img src="/aqua_infrastructure.png" alt="Indian Pond Infrastructure"
                             class="w-full h-full object-cover rounded-xl">
                     </div>
                 </div>
@@ -213,8 +226,13 @@
         <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
             <div class="col-span-2">
                 <div class="logo-wordmark mb-6">
-                    <span class="logo-farm text-primary-green">FARM</span> <span class="logo-lynk text-aqua-blue">LYNK</span>
-                    <span class="logo-agri text-white font-bold ml-1 opacity-90">Agri Symbiosis Private Limited</span>
+                    <img src="/logo.png" alt="Farmlynk Logo" class="logo-img">
+                    <div class="logo-text-container">
+                        <div class="logo-name">
+                            <span class="text-primary-green">FARM</span><span class="text-aqua-blue">LYNK</span>
+                        </div>
+                        <span class="logo-suffix text-white/80">Agri Symbiosis</span>
+                    </div>
                 </div>
                 <p class="text-gray-400 max-w-sm mb-8 leading-relaxed">
                     Pioneering the synergy between agriculture and aquaculture to ensure a sustainable future for rural entrepreneurs.
@@ -271,7 +289,7 @@
             </div>
         </div>
         <div class="container mx-auto px-6 pt-10 border-t border-gray-800 text-center text-gray-500 text-sm">
-            <p>&copy; 2026 Farmlynk Agri Symbiosis Private Limited. All rights reserved. GST: 36AAGCF5017P1ZA</p>
+            <p>&copy; 2026 Farmlynk Agri Symbiosis Private Limited. All rights reserved. GST: 36AAGCF5017P1ZA | Developed by <a href="https://www.codtechitsolutions.com/" target="_blank" class="text-primary-green hover:underline">CODTECH IT SOLUTION</a></p>
         </div>
     </footer>
 
@@ -314,6 +332,22 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
                 menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+
+        // Service Card Expand/Collapse Logic
+        document.querySelectorAll('.view-more-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.bg-white, .p-10'); // Targeting both types of cards
+                card.classList.toggle('expanded');
+                
+                // Update button text
+                const textSpan = btn.querySelector('.btn-text');
+                if (card.classList.contains('expanded')) {
+                    textSpan.textContent = 'View Less';
+                } else {
+                    textSpan.textContent = 'View More';
+                }
             });
         });
     </script>

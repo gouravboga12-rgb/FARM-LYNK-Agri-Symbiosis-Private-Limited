@@ -65,13 +65,26 @@
 }
 
 /* Custom Wordmark Logo Styles */
-.logo-wordmark {
-  @apply flex items-center gap-1 font-bold whitespace-nowrap text-[10px] sm:text-sm md:text-lg lg:text-xl transition-all duration-300 text-text-dark;
+.logo-img {
+  @apply h-10 md:h-12 w-auto object-contain;
 }
 
-.logo-farm { @apply text-primary-green font-bold; }
-.logo-lynk { @apply text-aqua-blue font-bold ml-0.5; }
-.logo-agri { @apply inline-block font-bold ml-1 opacity-90; }
+.logo-wordmark {
+  @apply flex items-center gap-3 transition-all duration-300;
+}
+
+.logo-text-container {
+  @apply flex flex-col leading-none;
+}
+
+.logo-name {
+  @apply font-black text-lg md:text-xl tracking-tight;
+}
+
+.logo-suffix {
+  @apply text-[9px] md:text-[10px] font-bold opacity-75 uppercase tracking-widest;
+}
+
 
 .logo-icon {
   @apply text-primary-green relative;
@@ -180,7 +193,11 @@
 
 /* Mobile Menu Drawer */
 #mobile-menu {
-  @apply fixed inset-0 z-[60] bg-bg-deep/98 backdrop-blur-xl translate-x-full transition-transform duration-500 flex flex-col overflow-y-auto;
+  @apply fixed inset-x-0 top-0 z-[60] bg-bg-deep/80 backdrop-blur-xl -translate-y-full transition-transform duration-500 flex flex-col overflow-y-auto shadow-2xl;
+  height: 55vh;
+  border-bottom: 4px solid var(--color-primary-green);
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
 }
 
 .menu-header {
@@ -188,15 +205,53 @@
 }
 
 .menu-links {
-  @apply flex flex-col items-center justify-center flex-grow gap-6 py-6 text-xl font-bold;
+  @apply flex flex-col items-center justify-center flex-grow gap-4 py-4 text-lg font-bold;
 }
 
 #mobile-menu.active {
-  @apply translate-x-0;
+  @apply translate-y-0;
 }
 
 .mobile-link {
   @apply text-text-dark hover:text-primary-green transition-colors;
+}
+
+/* Expandable Service Cards */
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+.expanded .expandable-content {
+    max-height: 1500px;
+    opacity: 1;
+    margin-bottom: 1.5rem;
+}
+
+.view-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+    transform: translateX(5px);
+}
+
+.expanded .view-more-btn .plus-icon {
+    display: none;
+}
+
+.expanded .view-more-btn .minus-icon {
+    display: inline;
+}
+
+.view-more-btn .minus-icon {
+    display: none;
 }
 
 /* Responsive Container & Padding Override */

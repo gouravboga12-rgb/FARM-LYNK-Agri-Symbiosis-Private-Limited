@@ -14,19 +14,12 @@
     <nav class="fixed top-0 w-full z-50 glass py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="/" class="logo-wordmark">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 flex-shrink-0 relative">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                            <path d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z" fill="#00ACC1" fill-opacity="0.2"/>
-                            <path d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z" fill="#00ACC1"/>
-                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                <img src="/logo.png" alt="Farmlynk Logo" class="logo-img">
+                <div class="logo-text-container">
+                    <div class="logo-name">
+                        <span class="text-primary-green">FARM</span><span class="text-aqua-blue">LYNK</span>
                     </div>
-                    <div class="flex items-center">
-                        <span class="logo-farm text-primary-green">FARM</span> <span class="logo-lynk text-aqua-blue">LYNK</span>
-                        <span class="logo-agri text-text-dark opacity-90">Agri Symbiosis Private Limited</span>
-                    </div>
+                    <span class="logo-suffix text-text-dark">Agri Symbiosis</span>
                 </div>
             </a>
             <div class="hidden md:flex items-center gap-8">
@@ -50,19 +43,12 @@
     <div id="mobile-menu">
         <div class="menu-header">
             <a href="/" class="logo-wordmark">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 flex-shrink-0 relative">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                            <path d="M12 2C12 2 4 10 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 10 12 2 12 2Z" fill="#00ACC1" fill-opacity="0.2"/>
-                            <path d="M12 2C12 2 15 7 15 11C15 13.7614 12.7614 16 12 16C11.2386 16 9 13.7614 9 11C9 7 12 2 12 2Z" fill="#00ACC1"/>
-                            <path d="M12 22C12 22 19 15 19 10C19 6.5 16 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M12 22C12 22 5 15 5 10C5 6.5 8 3 12 2" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                <img src="/logo.png" alt="Farmlynk Logo" class="logo-img">
+                <div class="logo-text-container">
+                    <div class="logo-name">
+                        <span class="text-primary-green">FARM</span><span class="text-aqua-blue">LYNK</span>
                     </div>
-                    <div class="flex items-center">
-                        <span class="logo-farm text-primary-green">FARM</span> <span class="logo-lynk text-aqua-blue">LYNK</span>
-                        <span class="logo-agri text-text-dark opacity-90">Agri Symbiosis Private Limited</span>
-                    </div>
+                    <span class="logo-suffix text-text-dark">Agri Symbiosis</span>
                 </div>
             </a>
             <button id="menu-close" class="text-primary-green focus:outline-none">
@@ -92,108 +78,107 @@
         </div>
     </section>
 
-    <!-- Filter Navigation -->
-    <section class="pb-12 bg-bg-deep">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-center items-center gap-4 flex-wrap" data-aos="fade-up">
-                <button class="filter-btn active px-8 py-3 rounded-full font-bold text-sm transition-all duration-300 border border-black/5 bg-white text-text-light hover:border-primary-green hover:shadow-lg" data-filter="all">All Collection</button>
-                <button class="filter-btn px-8 py-3 rounded-full font-bold text-sm transition-all duration-300 border border-black/5 bg-white text-text-light hover:border-primary-green hover:shadow-lg" data-filter="photo">Photos</button>
-                <button class="filter-btn px-8 py-3 rounded-full font-bold text-sm transition-all duration-300 border border-black/5 bg-white text-text-light hover:border-primary-green hover:shadow-lg" data-filter="video">Videos</button>
-            </div>
-        </div>
-    </section>
+    <!-- Filter Navigation Removed for Simplicity -->
 
     <!-- Visual Showcase Grid -->
     <section class="py-12 bg-bg-deep min-h-[600px]">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
-                <!-- Video 1 -->
-                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 flex flex-col group hover:-translate-y-4 duration-500" data-type="video" data-aos="fade-up">
-                    <div class="aspect-video relative overflow-hidden bg-black/5">
-                        <video controls loop playsinline class="w-full h-full object-cover">
-                            <source src="/V1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="absolute top-4 left-4 bg-primary-green/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest z-10">Video</div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-primary-green font-bold text-xs uppercase tracking-widest mb-2 block">Agriculture</span>
-                        <h3 class="text-2xl font-bold mb-4">Precision Land Preparation</h3>
-                        <p class="text-text-light text-sm leading-relaxed">
-                            Witness the efficiency of our advanced primary tillage machinery in preparing optimal seedbeds.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Video 2 -->
-                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 flex flex-col group hover:-translate-y-4 duration-500" data-type="video" data-aos="fade-up" data-aos-delay="100">
-                    <div class="aspect-video relative overflow-hidden bg-black/5">
-                        <video controls loop playsinline class="w-full h-full object-contain">
-                            <source src="/V2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="absolute top-4 left-4 bg-aqua-blue/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest z-10">Video</div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-aqua-blue font-bold text-xs uppercase tracking-widest mb-2 block">Aquaculture</span>
-                        <h3 class="text-2xl font-bold mb-4">Advanced Aqua Systems</h3>
-                        <p class="text-text-light text-sm leading-relaxed">
-                            Exploring our independent aquaculture setups designed for maximum yield and sustainability.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Video 3 -->
-                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 flex flex-col group hover:-translate-y-4 duration-500" data-type="video" data-aos="fade-up" data-aos-delay="200">
-                    <div class="aspect-video relative overflow-hidden bg-black/5">
-                        <video controls loop playsinline class="w-full h-full object-contain">
-                            <source src="/V3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="absolute top-4 left-4 bg-accent-orange/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest z-10">Video</div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-accent-orange font-bold text-xs uppercase tracking-widest mb-2 block">Sustainability</span>
-                        <h3 class="text-2xl font-bold mb-4">Pure Growth Bio-Inputs</h3>
-                        <p class="text-text-light text-sm leading-relaxed">
-                            See how our organic bio-stimulants rejuvenate soil and promote natural crop immunity.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Image Showcase 1 -->
+                <!-- Image 1 -->
                 <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="/south_india_agriculture.png" alt="Agriculture Showcase" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                        <div class="absolute top-4 left-4 bg-primary-green/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Photo</div>
+                        <img src="/gallery_pitch.png" alt="STARTUP PITCH AT a-IDEA, NAARM" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-primary-green/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Innovation</div>
                     </div>
                     <div class="p-8 text-center">
-                        <h4 class="text-lg font-bold text-text-dark">Modern Farming Ecosystem</h4>
-                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Strategic farming network</p>
+                        <h4 class="text-lg font-bold text-text-dark">STARTUP PITCH AT a-IDEA, NAARM</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Farmlynk Milestone</p>
                     </div>
                 </div>
 
-                <!-- Image Showcase 2 -->
+                <!-- Image 2 -->
                 <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up" data-aos-delay="100">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="/south_india_aquaculture.png" alt="Aquaculture Showcase" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                        <div class="absolute top-4 left-4 bg-aqua-blue/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Photo</div>
+                        <img src="/gallery_summit.png" alt="EARTH SUMMIT – 2025" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-aqua-blue/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Event</div>
                     </div>
                     <div class="p-8 text-center">
-                        <h4 class="text-lg font-bold text-text-dark">Advanced Aqua Infrastructure</h4>
-                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">High-yield cultivation</p>
+                        <h4 class="text-lg font-bold text-text-dark">EARTH SUMMIT – 2025</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Sustainability Leadership</p>
                     </div>
                 </div>
 
-                <!-- Image Showcase 3 -->
+                <!-- Image 3 -->
                 <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up" data-aos-delay="200">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="/south_india_hero.png" alt="Visionary Farming" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                        <div class="absolute top-4 left-4 bg-accent-orange/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Photo</div>
+                        <img src="/gallery_meetup.png" alt="FPO REVIEW MEET UP IN a-IDEA, NAARM" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-accent-orange/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Network</div>
                     </div>
                     <div class="p-8 text-center">
-                        <h4 class="text-lg font-bold text-text-dark">Integrated Rural Development</h4>
-                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Empowering farmers</p>
+                        <h4 class="text-lg font-bold text-text-dark">FPO REVIEW MEET UP IN a-IDEA, NAARM</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Community Engagement</p>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/gallery_podcast.png" alt="FEATURING FOR A PODCAST IN MANAGE FISHUB" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-primary-green/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Media</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h4 class="text-lg font-bold text-text-dark">FEATURING FOR A PODCAST IN MANAGE FISHUB</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Expert Insights</p>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/gallery_youtube.png" alt="YOUTUBE THUMBNAIL OF OUR PODCAST" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-aqua-blue/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Youtube</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h4 class="text-lg font-bold text-text-dark">YOUTUBE THUMBNAIL OF OUR PODCAST</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Digital Presence</p>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/gallery_discussion.png" alt="STARTUP DISCUSSION" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-accent-orange/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Startup</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h4 class="text-lg font-bold text-text-dark">STARTUP DISCUSSION</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Strategic Planning</p>
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/gallery_incubation.png" alt="INCUBATION PROGRAM OF MANAGE FISHUB COHORT 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-primary-green/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Incubation</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h4 class="text-lg font-bold text-text-dark">INCUBATION PROGRAM OF MANAGE FISHUB COHORT 1</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Growth & Support</p>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="gallery-item bg-white rounded-[2rem] overflow-hidden shadow-xl border border-black/5 group hover:shadow-2xl transition-all duration-500" data-type="photo" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/gallery_stakeholders.png" alt="STAKEHOLDERS MEET" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-aqua-blue/90 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Stakeholders</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h4 class="text-lg font-bold text-text-dark">STAKEHOLDERS MEET</h4>
+                        <p class="text-text-light text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Collaborative Progress</p>
                     </div>
                 </div>
             </div>
@@ -219,8 +204,13 @@
         <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
             <div class="col-span-2">
                 <div class="logo-wordmark mb-6">
-                    <span class="logo-farm text-primary-green">FARM</span> <span class="logo-lynk text-aqua-blue">LYNK</span>
-                    <span class="logo-agri text-white font-bold ml-1 opacity-90">Agri Symbiosis Private Limited</span>
+                    <img src="/logo.png" alt="Farmlynk Logo" class="logo-img">
+                    <div class="logo-text-container">
+                        <div class="logo-name">
+                            <span class="text-primary-green">FARM</span><span class="text-aqua-blue">LYNK</span>
+                        </div>
+                        <span class="logo-suffix text-white/80">Agri Symbiosis</span>
+                    </div>
                 </div>
                 <p class="text-gray-400 max-w-sm mb-8 leading-relaxed">
                     Pioneering the synergy between agriculture and aquaculture to ensure a sustainable future for rural entrepreneurs.
@@ -277,7 +267,7 @@
             </div>
         </div>
         <div class="container mx-auto px-6 pt-10 border-t border-gray-800 text-center text-gray-500 text-sm">
-            <p>&copy; 2026 Farmlynk Agri Symbiosis Private Limited. All rights reserved. GST: 36AAGCF5017P1ZA</p>
+            <p>&copy; 2026 Farmlynk Agri Symbiosis Private Limited. All rights reserved. GST: 36AAGCF5017P1ZA | Developed by <a href="https://www.codtechitsolutions.com/" target="_blank" class="text-primary-green hover:underline">CODTECH IT SOLUTION</a></p>
         </div>
     </footer>
 
