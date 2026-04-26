@@ -262,8 +262,7 @@
   
   /* Reduced section padding for mobile */
   section {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    @apply py-12 md:py-24;
   }
 
   /* Specific hero padding adjustment */
