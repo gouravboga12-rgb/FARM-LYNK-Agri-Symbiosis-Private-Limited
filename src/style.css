@@ -66,23 +66,23 @@
 
 /* Custom Wordmark Logo Styles */
 .logo-img {
-  @apply h-10 md:h-16 w-auto object-contain;
+  @apply h-14 md:h-20 w-auto object-contain;
 }
 
 .logo-wordmark {
-  @apply flex items-center gap-0.5 transition-all duration-300;
+  @apply flex items-center gap-0 transition-all duration-300;
 }
 
 .logo-text-container {
-  @apply flex flex-row items-center gap-0.5 leading-none -ml-1.5;
+  @apply flex flex-col justify-center -ml-2 self-center;
 }
 
 .logo-name {
-  @apply font-black text-sm md:text-xl tracking-tight whitespace-nowrap;
+  @apply font-black text-base md:text-2xl tracking-tighter whitespace-nowrap leading-none;
 }
 
 .logo-suffix {
-  @apply font-black text-sm md:text-xl tracking-tight uppercase whitespace-nowrap opacity-90;
+  @apply font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase whitespace-nowrap opacity-90 leading-none mt-1;
 }
 
 
