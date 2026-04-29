@@ -70,19 +70,19 @@
 }
 
 .logo-wordmark {
-  @apply flex items-center gap-0 transition-all duration-300;
+  @apply flex items-center gap-3 transition-all duration-300;
 }
 
 .logo-text-container {
-  @apply flex flex-col justify-center -ml-2 self-center;
+  @apply flex flex-col justify-center;
 }
 
 .logo-name {
-  @apply font-black text-lg md:text-[1.8rem] tracking-[0.07em] whitespace-nowrap leading-tight;
+  @apply font-black text-lg md:text-[1.8rem] tracking-[0.06em] whitespace-nowrap leading-none;
 }
 
 .logo-suffix {
-  @apply font-black text-[10px] md:text-[0.6rem] tracking-[0.43em] uppercase whitespace-nowrap opacity-80 leading-none -mt-1;
+  @apply font-black text-[10px] md:text-[0.62rem] tracking-[0.45em] uppercase whitespace-nowrap opacity-80 leading-none mt-1;
 }
 
 
