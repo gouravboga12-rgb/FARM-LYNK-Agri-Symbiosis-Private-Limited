@@ -78,7 +78,7 @@
 }
 
 .logo-name {
-  @apply font-black text-lg tracking-[0.23em] md:text-[1.5rem] md:tracking-[0.06em] whitespace-nowrap leading-none;
+  @apply font-black text-lg tracking-[0.28em] md:text-[1.5rem] md:tracking-[0.06em] whitespace-nowrap leading-none;
 }
 
 .logo-suffix {
