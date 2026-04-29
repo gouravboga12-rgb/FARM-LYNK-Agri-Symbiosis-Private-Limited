@@ -78,11 +78,11 @@
 }
 
 .logo-name {
-  @apply font-black text-base md:text-2xl tracking-tighter whitespace-nowrap leading-none;
+  @apply font-black text-lg md:text-[1.8rem] tracking-[0.07em] whitespace-nowrap leading-tight;
 }
 
 .logo-suffix {
-  @apply font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase whitespace-nowrap opacity-90 leading-none mt-1;
+  @apply font-black text-[10px] md:text-[0.6rem] tracking-[0.43em] uppercase whitespace-nowrap opacity-80 leading-none -mt-1;
 }
 
 
