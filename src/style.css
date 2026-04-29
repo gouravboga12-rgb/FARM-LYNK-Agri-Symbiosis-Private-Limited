@@ -70,11 +70,11 @@
 }
 
 .logo-wordmark {
-  @apply flex items-center gap-3 transition-all duration-300;
+  @apply flex items-center gap-0 transition-all duration-300;
 }
 
 .logo-text-container {
-  @apply flex flex-col justify-center;
+  @apply flex flex-col justify-center -ml-1;
 }
 
 .logo-name {
